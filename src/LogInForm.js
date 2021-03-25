@@ -44,14 +44,18 @@ function LogInForm(props) {
         <div>
             <div style={formStyle}>
             <h2>Log In</h2>
-            <form onSubmit={handleSubmit}>
-            <label>Username:</label>
-            <input type="text" value={username} onChange={handleUsername} placeholder="Username" />
-            <label>Password:</label>
-            <input type="password" value={password} onChange={handlePassword} placeholder="Password" />
+            <form class="ui form" onSubmit={handleSubmit}>
+            <div class="field">
+                <label>Username:</label>
+                <input type="text" value={username} onChange={handleUsername} placeholder="Username" />
+            </div>
+            <div class="field">
+                <label>Password:</label>
+                <input type="password" value={password} onChange={handlePassword} placeholder="Password" />
+            </div>
             <br></br>
             <br></br>
-            <button type="submit">Submit</button>
+            <button class="ui button" type="submit">Submit</button>
             </form>
             </div>
         </div>
