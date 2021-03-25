@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import LogInForm from './LogInForm';
+import SignUpForm from './SignUpForm';
 import './App.css';
 
 function App() {
