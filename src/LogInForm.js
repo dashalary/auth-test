@@ -32,7 +32,6 @@ function LogInForm(props) {
         })
         setUsername("")
         setPassword("")
-
     }
 
     const formStyle = {
@@ -46,12 +45,16 @@ function LogInForm(props) {
             <div style={formStyle}>
             <h2>Log In</h2>
             <form onSubmit={handleSubmit}>
-                
+            <label>Username</label>
+            <input type="text" value={username} onChange={handleUsername} placeholder="Username" />
+            <label>Password</label>
+            <input type="password" value={password} onChange={handlePassword} placeholder="Password" />
+            <br></br>
+            <button type="submit">Submit</button>
             </form>
             </div>
         </div>
     )
-
 }
 
 export default LogInForm
