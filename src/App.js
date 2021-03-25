@@ -6,7 +6,7 @@ function App() {
 
   const [user, setUser] = useState({})
 
-
+// next, use effect hook on auto login route
 
   return (
     <div className="App">
